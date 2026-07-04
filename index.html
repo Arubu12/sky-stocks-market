@@ -8,39 +8,85 @@
       font-family: Arial;
       background: #0f172a;
       color: white;
+    }
+
+    .topbar {
+      background: #111827;
+      padding: 15px;
       text-align: center;
+      font-size: 20px;
+      font-weight: bold;
     }
 
     .container {
-      margin-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      padding: 20px;
     }
 
-    h1 {
-      font-size: 40px;
+    .card {
+      background: #1f2937;
+      padding: 20px;
+      border-radius: 10px;
     }
 
-    p {
-      font-size: 18px;
-      opacity: 0.8;
+    .big {
+      font-size: 24px;
+      font-weight: bold;
     }
 
     button {
-      padding: 12px 20px;
-      margin-top: 20px;
+      margin-top: 10px;
+      padding: 10px;
       border: none;
-      border-radius: 8px;
       background: #22c55e;
       color: white;
-      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Sky Stocks Market 🚀</h1>
-    <p>Welcome to your investment platform</p>
-    <button onclick="alert('Coming soon!')">Start Trading</button>
+
+  <div class="topbar">
+    Sky Stocks Market Dashboard 🚀
   </div>
+
+  <div class="container">
+
+    <div class="card">
+      <div>Account Balance</div>
+      <div class="big">$5,000</div>
+    </div>
+
+    <div class="card">
+      <div>Profit Today</div>
+      <div class="big">+$320</div>
+    </div>
+
+    <div class="card">
+      <div>Trades</div>
+      <div class="big">12</div>
+    </div>
+
+    <div class="card">
+      <div>Bitcoin Price</div>
+      <div class="big">$67,000</div>
+    </div>
+
+    <div class="card">
+      <div>Start Trading</div>
+      <button onclick="alert('Trading system coming soon')">Open Trade</button>
+    </div>
+
+    <div class="card">
+      <div>Status</div>
+      <div>Market Active</div>
+    </div>
+
+  </div>
+
 </body>
 </html>
